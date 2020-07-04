@@ -1,0 +1,526 @@
+:root{
+    --offwhite:rgba(255, 255, 255, 0.842);
+    --psize:1.5rem;
+    --hsize:2.8rem;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box ;
+}
+
+html{
+    font-size: 10px;
+}
+
+.heading{
+    color: var(--offwhite);
+    font-size: var(--psize);
+    font-size: var(--hsize);
+    padding-bottom: 10px;
+}
+.text{
+    color: var(--offwhite);
+    font-size: var(--psize);
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(45deg,red,blue) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.banner img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+    
+}
+.logo{
+    position: absolute;
+    top:30px;
+    left: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.banner header .toggle{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 38px;
+    height: 28px;
+    background:url("./images/toggle.png");
+    background-size: cover;
+    cursor: pointer;
+    z-index: 50;
+    
+}
+.banner .content{
+    position: absolute;
+    max-width: 900px; 
+    padding: 50px;
+    text-align: center;
+}   
+.banner .content h2{
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.842);
+    padding-bottom: 10px;
+}
+.banner .content p{
+    max-width: 600px; 
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.685);
+    letter-spacing: 1px;
+    line-height: 1.3;
+    /* margin: 0px; */
+    
+}
+.about{
+    display: flex;
+}
+.about .left-section{
+    width: 50%;
+    padding: 100px 70px;
+    background-color: #233749;
+    
+    }
+.about .left-section h2{
+    font-size: 2.8rem;
+    color: var(--offwhite);
+    
+}    
+.about .left-section p{
+    color: var(--offwhite);
+    font-size: 1.5rem;
+}
+.right-section{
+    width: 50%;
+    background: url('./images/window.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.service{
+    height: 390px;
+    background: #0e2131;
+    font-size: var(--pSize);
+    text-align: center;
+    padding:40px 50px;
+}
+.service p,h2{
+    color: var(--offwhite);
+    font-size: var(--psize);
+}
+.service h2{
+    font-size: var(--hsize);
+    padding-bottom: 10px;
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+
+}
+.imgbx{
+    
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    padding: 50px;
+    padding-top: 80px;
+
+   
+    
+}
+
+.imgbx img{
+    
+    max-width: 50%;
+}
+.technology{
+    background-color: rgb(46, 82, 150);
+    width: 100%;
+    /* height: 500px; */
+    padding: 60px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.technology .tech-content, p h2{
+    color: var(--offwhite);
+    font-size: var(--psize);
+    letter-spacing: 1px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding:10px 70px;
+}
+.technology .tech-content h2{
+    font-size: var(--hsize);
+    padding-bottom: 10px;
+}
+.tech-content{
+    max-width: 65%;
+    box-sizing: border-box;
+}
+.tech-imgbx{
+    max-width: 35%;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+.tech-imgbx img{
+    max-width: 85%;
+}
+
+/* CLIENTS */
+.clients{
+    background-color: #233749;
+    padding:40px 50px;
+    text-align: center;
+}
+
+.clients .img-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.clients .img-container img{
+    width: 180px;
+    padding: 10px;
+    margin: 20px 10px;
+    opacity: .3;
+    cursor: pointer;
+}
+.clients .img-container img:hover{
+    width: 180px;
+    opacity: .8;
+}
+.testimonial{
+    background-color: #0e2131;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.testimonial .testi-container {
+    margin-top: 30px;
+    padding: 10px 10px;
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+.testimonial .testi-container .testi-1,.testi-2{
+    margin: 5px 20px;
+    padding: 70px 50px;
+    min-width: 400px;
+    max-width: 450px;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: var(--psize);
+    line-height: 1.5;
+}
+.testimonial .testi-container  p{
+    font-style: italic;
+    font-weight: 600;
+    text-align: left;
+    opacity: 0.8;
+}
+.testimonial .testi-container h4{
+    font-style: normal;
+    text-align: end;
+    color: rgb(63, 118, 219);
+    padding-top: 10px;
+}
+.contact{
+    background: #233749;
+    text-align: center;
+    padding: 100px 50px;
+    padding-bottom: 80px;
+}
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-container .form-box{
+    background: url(./images/red.jpg);
+    width: 50%;
+    padding: 150px 100px;
+    background-size: cover;
+   
+
+}
+.form-container .form-imgbx{
+    width: 50%;
+    background: url(./images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: fill;
+}
+    
+.form-eachBox input,textarea{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid var(--offwhite);
+    background: transparent;
+    margin-bottom: 30px;
+    padding-top: 18px;
+    font-size: 1.8rem;
+    color: var(--offwhite);
+    outline: none;
+    letter-spacing: 1px;
+}
+.form-eachBox textarea{
+    min-height: 130px;
+}
+::placeholder{
+    color: var(--offwhite);
+    font-size: 1.7rem;
+}
+
+.form-eachBox button{
+    padding: 10px 40px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+footer {
+    background-color: #0e2131;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+}
+footer h3{
+    color: var(--offwhite);
+    font-weight: normal;
+    font-size: var(--psize);
+}
+footer .social {
+    margin-top:12px ;
+    display: flex;
+}
+footer .social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+footer .social ul img{
+    width: 20px;
+    margin: 0px 20px;
+    opacity: 0.5;
+    filter: invert();
+}
+        
+footer .social ul  img:hover{
+    opacity: 1;    
+}
+
+/* RESPONSIVE */
+@media (max-width:778px){
+    .about {
+        display: flex;
+        background-color: #233749;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        padding: 0px;
+    }
+    .about .left-section{
+        width: 100%;
+        padding: 75px;
+    }
+    .about .left-section p{
+        font-size: 2.5rem;
+    }
+    .about .left-section h2{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .about .right-section{
+        width: 100%;
+        height: 450px;
+        background: url('./images/window.jpg');
+        background-size: cover;
+        background-position: center;
+        
+    }
+    /* ABOUT END */
+
+    .service{
+        background: #0e2131;
+        text-align: justify;
+        height: auto;
+        padding: 75px;
+        padding-bottom:-100px;
+    }
+    .service p,h2{
+        font-size: 2.5rem;
+        color: var(--offwhite);
+    }
+    .service h2{
+        font-size: 4rem;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .service .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service .container .imgbx{
+        width: 350px;
+        height: 400px;
+        margin: auto;
+        margin-top: 35px;
+        background-color: #fff;
+        text-align: center;
+        font-size: 3rem;
+        padding: 50px;
+        padding-top: 80px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* TECHNOLOGY */
+
+    .technology{
+        margin-top: -164px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 150px 0px;
+    }
+    .technology .tech-content{
+        padding: 0;
+        margin: 0px -20px;
+    }
+    .technology .tech-content p{
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+        text-align: justify;
+    }
+    .technology .tech-content h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .technology .tech-imgbx{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        max-width: 300px;
+        padding: 20px;
+        
+    }
+    .technology .tech-imgbx img{
+        width: 100%;
+    }
+
+ /* CLENTS */
+ .clients p{
+    font-size: 2.5rem;
+    text-align: justify;
+    padding: 0px 40px;
+ }
+ .clients h2{
+     font-size: 4rem;
+     padding-bottom: 40px;
+ }
+ .clients .img-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* TESTIMONIAL */
+ .testimonial h2{
+    font-size: 4rem;
+    padding-bottom: 40px;
+    }
+.testimonial .testi-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.testimonial .testi-container .testi-1{
+    min-width: 300px;
+    margin-bottom: 40px;
+    padding: 50px 50px;
+    }
+.testimonial .testi-container .testi-2{
+        min-width: 300px;
+        margin-bottom: 40px;
+        padding: 50px 50px;
+     }
+     .contact{
+         padding: 75px;
+         padding-top: 40px;
+     }
+     .contact h2{
+         font-size: 4rem;
+     }
+     .contact p{
+        font-size: 2.5rem;
+        text-align: justify;    
+     }
+     .form-container{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .form-container .form-box{
+         width: 100%;
+     }
+     .form-container .form-imgbx{
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -150px;
+     }
+     
+}
