@@ -172,13 +172,13 @@ html{
     box-sizing: border-box;
 }
 
-.technology .tech-content, p h2{
+.technology .tech-content p, .technology .tech-content h2{
     color: var(--offwhite);
     font-size: var(--psize);
     letter-spacing: 1px;
     line-height: 1.5;
     box-sizing: border-box;
-    padding:10px 70px;
+    /* padding:10px 70px; */
 }
 .technology .tech-content h2{
     font-size: var(--hsize);
@@ -352,8 +352,10 @@ footer .social ul  img:hover{
     opacity: 1;    
 }
 
-/* RESPONSIVE */
+/***************************** R E S P O N S I V E ***************************/
+
 @media (max-width:778px){
+
     .about {
         display: flex;
         background-color: #233749;
@@ -368,7 +370,7 @@ footer .social ul  img:hover{
         padding: 75px;
     }
     .about .left-section p{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .about .left-section h2{
         text-align: center;
@@ -391,8 +393,8 @@ footer .social ul  img:hover{
         padding: 75px;
         padding-bottom:-100px;
     }
-    .service p,h2{
-        font-size: 2.5rem;
+    .service p, .service h2{
+        font-size: 1.8rem;
         color: var(--offwhite);
     }
     .service h2{
@@ -438,7 +440,7 @@ footer .social ul  img:hover{
     .technology .tech-content p{
         margin: 0;
         padding: 0;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         text-align: justify;
     }
     .technology .tech-content h2{
@@ -459,7 +461,7 @@ footer .social ul  img:hover{
 
  /* CLENTS */
  .clients p{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-align: justify;
     padding: 0px 40px;
  }
@@ -502,7 +504,7 @@ footer .social ul  img:hover{
          font-size: 4rem;
      }
      .contact p{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         text-align: justify;    
      }
      .form-container{
@@ -523,4 +525,62 @@ footer .social ul  img:hover{
         background-position-y: -150px;
      }
      
+}
+
+/***************************** SMALL R E S P O N S I V E ***************************/
+
+@media (min-width:320px) and (max-width:568px){
+    .banner .content{
+        padding: 50px 20px 50px;
+    }
+    .about .left-section{
+        padding: 50px 30px;
+    }
+    .service{
+        padding: 50px 30px;
+    } 
+    .technology p{
+        padding: 0px;
+    }
+    .technology .tech-content{
+        max-width: 100%;
+        padding: 50px 30px;
+    }
+    .clients{
+        padding: 50px 30px;
+    }
+    .clients p{
+        padding: 0px;
+    }
+    .contact{
+        padding: 40px 30px 75px 30px;
+    }
+    .form-container .form-box{
+        padding: 120px 30px;
+    }
+    .service .container .imgbx{
+        width: inherit;
+        max-height: fit-content;
+        color: rgb(204, 0, 0);
+    }
+    footer{
+        padding: 50px;
+        padding-top: 30px;
+        flex-direction: column;
+        height: 200px;
+        text-align: center;
+    }
+    footer .social {
+        margin-top:12px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer .social ul{
+        margin-top:22px ;
+        display: flex;
+    }
+
+
 }
